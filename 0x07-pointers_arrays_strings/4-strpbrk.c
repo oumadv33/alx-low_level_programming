@@ -17,7 +17,7 @@ while (*s)
 for (i = 0; accept[i]; i++)
 {
 if (*s == accept[i])
-retur(s);
+return (s);
 }
 s++;
 }
