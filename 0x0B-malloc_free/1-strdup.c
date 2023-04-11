@@ -1,11 +1,10 @@
 #include "main.h"
 
 /**
- * create_array - write a func that creates an array of char, and
- * init it with a specific char
- * @size: size of array
- * @c: input char
- * Return: NULL if size = 0 or ptr to the array or NULL if it fails
+ * *_strdup - return a pointer to a newly allocated space in memory
+ * which contains a copy of the string given as a parameter
+ * @str: string
+ * Return: 0
  **/
 char *_strdup(char *str)
 {
