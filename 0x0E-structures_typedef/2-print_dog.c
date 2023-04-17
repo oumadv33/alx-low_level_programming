@@ -2,21 +2,22 @@
 #include "dog.h"
 
 /**
- * init_dog - function that initialize a variable of type struct dog
+ * print_dog - function that prints a struct dog
  * @d: a variable of type struct dog
- * @name: member
- * @age: member
- * @owner: member
  */
 
-void init_dog(struct dog *d, char *name, float age, char *owner)
+void print_dog(struct dog *d)
 {
 
-	if (d == NULL) /* validate if d initiated correctly */
+	if (d == NULL)
 		return;
 
-	d->name = name;
-	d->age = age;
-	d->owner = owner;
-}
+	(d->name == NULL) ? printf("Name: (nil)\n")
+		: printf("Name: %s\n", d->name);
 
+	printf("Age: %f\n", d->age);
+
+	(d->owner == NULL) ? printf("Owner: (nil)\n")
+		: printf("Owner: %s\n", d->owner);
+
+}
